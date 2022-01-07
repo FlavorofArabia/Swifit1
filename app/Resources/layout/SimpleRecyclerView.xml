@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txttitle"
+        android:layout_marginBottom="12dp"
+    />
+    <WoWonder.Library.Anjo.BottomSheetListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SimplelistView" />
+
+</LinearLayout>

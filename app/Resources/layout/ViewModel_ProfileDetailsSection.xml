@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+		android:id="@+id/mainLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="15dp"
+		android:visibility="gone">
+	
+		<LinearLayout
+			android:id="@+id/CountFollowersLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center_horizontal">
+
+			<TextView
+				android:id="@+id/txtFollowers"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Lbl_Followers"
+				android:textColor="@color/colorIcon"
+				android:textSize="10sp"/>
+
+			<TextView
+				android:id="@+id/CountFollowers"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textSize="18sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/CountFollowingLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center_horizontal">
+
+			<TextView
+				android:id="@+id/txtFollowing"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Lbl_Following"
+				android:textColor="@color/colorIcon"
+				android:textSize="10sp"/>
+
+			<TextView
+				android:id="@+id/CountFollowing"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textSize="18sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/CountLikesLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center_horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Btn_Likes"
+				android:textColor="@color/colorIcon"
+				android:textSize="10sp"/>
+
+			<TextView
+				android:id="@+id/CountLikes"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textSize="18sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/CountPointsLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center_horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Btn_Points"
+				android:textColor="@color/colorIcon"
+				android:textSize="10sp"/>
+
+			<TextView
+				android:id="@+id/CountPoints"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textSize="18sp"/>
+
+		</LinearLayout>
+		</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recylerfamous"
+        android:focusable="false"
+		android:padding="15dp"
+         android:layout_alignParentTop="true"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
+        android:scrollbars="vertical"
+        android:layout_marginEnd="0dp" />
+
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/layoutviewtype"
+        android:orientation="vertical">
+		  <View
+       android:layout_width="match_parent"
+            android:background="?attr/colorDivider"
+       android:layout_height="1dp"/>
+    	<LinearLayout
+       
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+       
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="6dp"
+		android:layout_gravity="bottom"
+		android:weightSum="3">
+		<LinearLayout
+			android:id="@+id/lldoubleview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:backgroundTint="@color/colorIcon"
+			android:background="?attr/selectableItemBackground"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:padding="9dp"
+				android:id="@+id/ivdoubleview2"
+				android:tint="@color/colorIcon"
+				android:src="@drawable/icon_doubleview" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/llsingleview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="?attr/selectableItemBackground"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:padding="9dp"
+				android:id="@+id/ivsingleview"
+				android:tint="@color/accent"
+				android:src="@drawable/icon_singleview" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/llvideoreels"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:clickable="true"
+			android:focusable="true"
+			android:background="?attr/selectableItemBackground"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:padding="9dp"
+				android:id="@+id/ivvideoreels"
+				android:tint="#000"
+				android:src="@drawable/icon_videosview" />
+		</LinearLayout>
+	
+      
+	</LinearLayout> 
+        <View
+       android:layout_width="match_parent"
+            android:background="?attr/colorDivider"
+       android:layout_height="1dp"/>
+         </LinearLayout>
+	</LinearLayout>
